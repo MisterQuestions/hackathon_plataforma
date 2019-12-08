@@ -29,9 +29,9 @@ export default {
     register () {
       axios({
         method: 'POST',
-        url: 'http://34.74.72.68/api/auth/signup',
-        data: this.input,
-        headers: {
+        'url': 'http://34.74.72.68/api/auth/signup',
+        'data': this.input,
+        'headers': {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
           'X-Requested-With': 'XMLHttpRequest'

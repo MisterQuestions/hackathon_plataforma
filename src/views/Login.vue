@@ -28,9 +28,9 @@ export default {
     login () {
       axios({
         method: 'POST',
-        url: 'http://34.74.72.68/api/auth/login',
-        data: this.input,
-        headers: {
+        'url': 'http://34.74.72.68/api/auth/login',
+        'data': this.input,
+        'headers': {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
           'X-Requested-With': 'XMLHttpRequest'
@@ -71,9 +71,9 @@ export default {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  margin-bottom: 20px;
 }
 .btn {
-  margin-top: 20px;
   background-color: #28b3b8;
   color: #ffffff;
 }
