@@ -7,86 +7,86 @@
           <input type="text" placeholder="Buscar un módulo o característica...">
         </div>
         <div class="modules">
-          <div class="box">
+          <a class="box" href="/dashboard/assistance">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">playlist_add_check</i>
               </div>
               <div class="name">Asistencia</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/courses">
             <div class="info">
               <div class="icon">
-                <i class="material-icons">playlist_add_check</i>
+                <i class="material-icons">book</i>
               </div>
               <div class="name">Cursos</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/schedule">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">av_timer</i>
               </div>
               <div class="name">Horario</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/exam">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">receipt</i>
               </div>
               <div class="name">Examen</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/calendar">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">event</i>
               </div>
               <div class="name">Calendario</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/news">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">view_day</i>
               </div>
               <div class="name">Noticias</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/assignments">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">assignment</i>
               </div>
               <div class="name">Tareas</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/grades">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">filter_9</i>
               </div>
               <div class="name">Calificaciones</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/messages">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">insert_comment</i>
               </div>
               <div class="name">Mensajes</div>
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="/dashboard/stats">
             <div class="info">
               <div class="icon">
                 <i class="material-icons">assessment</i>
               </div>
               <div class="name">Estadísticas</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -95,6 +95,7 @@
 <style lang="scss" scoped>
 .dashboard {
   background-color: #f2f4f4;
+  height: 100vh;
 }
 
 .overview {
@@ -134,13 +135,26 @@
 }
 
 .box {
-  width: 175px;
-  height: 175px;
+  width: 155px;
+  height: 155px;
   margin: 10px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .icon {
@@ -153,11 +167,13 @@
 
   i {
     font-size: 3rem;
+    color: #ffffff;
   }
 }
 
 .name {
   margin-top: 10px;
+  color: #000000;
 }
 </style>
 
