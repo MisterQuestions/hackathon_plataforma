@@ -1,22 +1,27 @@
 <template>
   <div class="header">
     <div class="me">
-      <div class="name">Nombre</div>
-      <div class="group"><b>Group</b></div>
+      <div class="logo">
+        <img src="@/assets/logo.png">
+      </div>
+      <div class="data">
+        <div class="name">Antonio Carvajal Galindo</div>
+        <div class="group"><b>Tutor</b></div>
+      </div>
     </div>
     <div class="quickactions">
-      <div class="icon notifications">
+      <a class="icon notifications" href="/profile/notifications">
         <i class="material-icons">notifications</i>
-      </div>
-      <div class="icon messages">
+      </a>
+      <a class="icon messages" href="/profile/messages">
         <i class="material-icons">email</i>
-      </div>
-      <div class="icon profile">
+      </a>
+      <a class="icon profile" href="/profile">
         <i class="material-icons">person</i>
-      </div>
-      <div class="icon">
+      </a>
+      <a class="icon" href="/logout">
         <i class="material-icons logout">input</i>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -30,7 +35,21 @@
 }
 
 .me {
-  margin-left: 25px;
+  margin-left: 5px;
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.data {
+  margin-left: 10px;
 }
 
 .quickactions {
@@ -50,6 +69,7 @@ i {
   align-items: center;
   justify-content: center;
   margin: 0 5px;
+  text-decoration: none;
 }
 
 .notifications {
